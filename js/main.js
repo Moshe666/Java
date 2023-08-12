@@ -94,12 +94,14 @@
             
             const accordionList = e.currentTarget
             const accordionOpenedItem = accordionList.querySelector('.accordion-list__item--opened')
-            const accordionOpenedContent = accordionList.querySelector('.accordion-list__content')
+            const accordionOpenedContent = accordionList.querySelector('.accordion-list__item--opened .accordion-list__content')
             
             const accordionControl = e.target.closest('.accordion-list__control')
             if (!accordionControl ) return
             const accordionItem = accordionControl.parentElement
             const accordionContent = accordionControl.nextElementSibling
+
+            
 
             if (accordionOpenedItem && accordionItem != accordionOpenedItem ) {
                 accordionOpenedItem.classList.remove('accordion-list__item--opened')
