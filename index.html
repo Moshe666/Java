@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wake & Bake</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body class="body ">
@@ -141,13 +142,13 @@
                 <div class="container">
                     <h2 class="program__title title">Программа обучения</h2>
                     <div class="program__top">
-                            <p class="program__text">
-                                Продолжительность курса — 4 недели
-                                <br>
-                                Программа обучения состоит из 8 модулей
-                                <br>
-                                На каждое занятие отводится по 6 часов
-                            </p>
+                        <p class="program__text">
+                            Продолжительность курса — 4 недели
+                            <br>
+                            Программа обучения состоит из 8 модулей
+                            <br>
+                            На каждое занятие отводится по 6 часов
+                        </p>
                         <ul class="tab-controls">
                             <li class="tab-controls__item">
                                 <a class="tab-controls__link tab-controls__link--active " href="#tab1">Неделя 1</a>
@@ -609,25 +610,25 @@
                     </div>
 
                     <div class="program__bottom">
-                            <div class="program__action">
+                        <div class="program__action">
 
-                                <div class="program__discount">
-                                    Успей получить скидку
-                                    <div class="program__discount-value">
-                                        -30%
-                                    </div>
-                                    <span>до 1 июня</span>
+                            <div class="program__discount">
+                                Успей получить скидку
+                                <div class="program__discount-value">
+                                    -30%
                                 </div>
-                                <div class="program__price">
-                                    <div class="program__price-text">Стоимость курса без скидки</div>
-                                    <div class="program__price-value">32 000 руб.</div>
-                                </div>
-                                <div class="program__price">
-                                    <div class="program__price-text">Стоимость курса со скидкой</div>
-                                    <div class="program__price-value program__price-value--big">22 400 руб.</div>
-                                </div>
-                                <a class="program__button button" href="#">Оставить заявку</a>
+                                <span>до 1 июня</span>
                             </div>
+                            <div class="program__price">
+                                <div class="program__price-text">Стоимость курса без скидки</div>
+                                <div class="program__price-value">32 000 руб.</div>
+                            </div>
+                            <div class="program__price">
+                                <div class="program__price-text">Стоимость курса со скидкой</div>
+                                <div class="program__price-value program__price-value--big">22 400 руб.</div>
+                            </div>
+                            <a class="program__button button" href="#">Оставить заявку</a>
+                        </div>
                         <div class="program__img">
                             <img src="img/decor/cake.png" alt="">
                         </div>
@@ -641,13 +642,85 @@
 
             <section class="main__gallery gallery">
                 <div class="container">
-                    <div class="main__gallery-inner"></div>
+                    <div class="gallery__inner">
+                        <div class="gallery__img">
+                            <img src="img/decor/cake2.png" alt="">
+                        </div>
+                        <div class="gallery__content">
+                            <div class="gallery__info">
+                                <h2 class="gallery__title title">
+                                    Фотогалерея
+                                </h2>
+                                <p class="gallery__text">
+                                    Для комфортного обучения сделаны просторные аудитории, где предоставляется
+                                    всё необходимое оборудование. Здесь наши ученики создают кулинарные шедевры
+                                    под присмотром опытных наставников
+                                </p>
+                            </div>
+                            <div class="gallery__nav">
+                                <button  class="gallery__prev" type="button">
+                                    <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.4326 2.00442L2.53642 8.0592L8.5912 13.9554L7.59667 14.9767L0.520603 8.08595L7.41131 1.00989L8.4326 2.00442Z"
+                                            fill="#FFA55C" />
+                                        <path
+                                            d="M1.53857 8.79199L1.51947 7.35212L13.7584 7.18969L13.7775 8.62957L1.53857 8.79199Z"
+                                            fill="#FFA55C" />
+                                    </svg>
+                                </button>
+                                <div class="gallery__pagination"></div>
+                                <button  class="gallery__next" type="button">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.25605 12.96L11.232 6.984L5.25605 1.008L6.26405 -3.0528e-07L13.248 6.984L6.26405 13.968L5.25605 12.96Z"
+                                            fill="#FFA55C" />
+                                        <path
+                                            d="M12.24 6.26465L12.24 7.70465L-9.30166e-06 7.70465L-9.23872e-06 6.26465L12.24 6.26465Z"
+                                            fill="#FFA55C" />
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="gallery__slider swiper">
+                        <div class="gallery__wrapper swiper-wrapper">
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/slide1.jpg">
+                                <img src="img/content/slide1.jpg" alt="">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/slide2.jpg">
+                                <img src="img/content/slide2.jpg" alt="">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/slide3.jpg">
+                                <img src="img/content/slide3.jpg" alt="">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/slide4.jpg">
+                                <img src="img/content/slide4.jpg" alt="">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/slide1.jpg">
+                                <img src="img/content/slide1.jpg" alt="">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/slide2.jpg">
+                                <img src="img/content/slide2.jpg" alt="">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/slide3.jpg">
+                                <img src="img/content/slide3.jpg" alt="">
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+
                 </div>
             </section>
 
         </main>
-
-
 
         <footer class="footer">
             <div class="container">
@@ -752,7 +825,7 @@
                 </svg>
 
             </a>
-            <img class="modal__img" src="./img/decor/cupcake.png">
+            <img class="modal__img" src="/img/decor/cupcake.png">
             <h3 class="modal__title">Удиви своих близких вкусными капкейками </h3>
             <p class="modal__text">Оставь свой e-mail, и мы вышлем рецепт на почту</p>
             <form class="modal__form">
@@ -766,6 +839,7 @@
     </div>
 
     <script src="js/fslightbox.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
