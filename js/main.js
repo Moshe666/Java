@@ -120,7 +120,42 @@
     });
     
     
+// ============= SLIDER-GALLERY ===========
 
+const swiper = new Swiper('.gallery__slider', {
+
+
+    spaceBetween: 32,
+    slidesPerView: 1,
+
+    pagination: {
+        el: '.gallery__pagination',
+        type: 'fraction',
+    },
+
+    navigation: {
+        nextEl: '.gallery__next',
+        prevEl: '.gallery__prev',
+    },
+
+
+
+    breakpoints: {
+        320:{
+            slidesPerView: 2,
+        },
+        601:{
+            slidesPerView: 3,
+        },
+        801:{
+            spaceBetween: 15,
+        },
+        1101:{
+            slidesPerView: 4,
+        },
+    },
+
+    });
 
 
 })()
