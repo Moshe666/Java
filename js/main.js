@@ -157,5 +157,30 @@ const swiper = new Swiper('.gallery__slider', {
 
     });
 
+// ======= TESTIMONIALS ====
+
+new Swiper('.testimonials__slider', {
+
+
+    spaceBetween: 30,
+    slidesPerView: 2,
+    centeredSlides: true,
+    initialSlide: 1,
+
+    scrollbar:{
+        el: '.testimonials__scrollbar',
+        draggble: true,
+    },
+
+    navigation: {
+        nextEl: '.testimonials__next',
+        prevEl: '.testimonials__prev',
+    },
+
+
+
+
+    });
+
 
 })()
