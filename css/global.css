@@ -4,6 +4,8 @@
     --general-bg: #FFF9F4;
     --accent-bg: #FFE0CB;
     --accent-color: #FFA55C;
+    --border-radius: 20px;
+    --transition: all .4s;
 }
 
 .body {
@@ -172,7 +174,7 @@
 
 .modal__window {
     background: var(--general-bg);
-    border-radius: 20px;
+    border-radius: var(--border-radius);
     padding: 0 60px 60px;
     position: relative;
     max-width: 428px;
@@ -243,7 +245,7 @@
     border: 1px solid #AC907A;
     padding: 19px 42px 19px 28px;
     font-size: 16px;
-
+    background: transparent;
     transition: all 0.4s;
 }
 
