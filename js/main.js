@@ -1,8 +1,8 @@
 (function(){
 // ============= BURGER ===========
     document.addEventListener('click', burgerInit)
-
     function burgerInit(e){
+    
 
         const burgerIcon = e.target.closest('.burger-icon')
         const burgerNavLink = e.target.closest('.nav__link')
@@ -14,14 +14,29 @@
             document.body.classList.add('body--opened-menu')
         } else {
             document.body.classList.remove('body--opened-menu')
-        }
-        
+        } 
+    
+    
+    }
+
+    let button = document.getElementById("burger");
+
+// Функция, которая будет вызываться при скролле
+function handleScroll() {
+  // Добавляем класс "active" к кнопке
+  button.classList.add("burger__active");
+
+  // Устанавливаем таймер на 1 секунду для удаления класса "active"
+  clearTimeout(button.timer);
+  button.timer = setTimeout(function() {
+    button.classList.remove("burger__active");
+  }, 700);
+}
+
+// Привязываем функцию handleScroll к событию скролла на странице
+window.addEventListener("scroll", handleScroll);
 
     
-        
-
-        
-    }
 
 // ============= MODALKA ===========
     const modal = document.querySelector('.modal')
@@ -97,7 +112,10 @@
             const accordionOpenedContent = accordionList.querySelector('.accordion-list__item--opened .accordion-list__content')
             
             const accordionControl = e.target.closest('.accordion-list__control')
+
             if (!accordionControl ) return
+
+            e.preventDefault()
             const accordionItem = accordionControl.parentElement
             const accordionContent = accordionControl.nextElementSibling
 
