@@ -4,6 +4,11 @@
 @import 'header.css';
 @import 'footer.css';
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5vw;
+}
+
 
 
 /* ===================== ABOUT ==================== */
@@ -328,7 +333,7 @@
     padding: 40px;
 }
 
-.program__bottom-action {}
+
 
 .program__discount-value {
     display: block;
@@ -519,9 +524,6 @@
 /* ===================== GALLERY-SLIDER ==================== */
 /* ===================== GALLERY-SLIDER ==================== */
 
-.main__testimonials {}
-
-.testimonials {}
 
 
 .testimonials__inner {
@@ -532,7 +534,7 @@
     gap: 30px;
 }
 
-.testimonials__content {}
+
 
 .testimonials__info {
     max-width: 632px;
@@ -553,9 +555,7 @@
 
 }
 
-.testimonials__prev {}
 
-.testimonials__next {}
 
 .testimonials__slider {
     overflow: visible;
